@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="CSS/EstiloGeneral.css">
+    <Link rel="stylesheet" href="CSS/EstiloInicio.css">
     <title>Inicio</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,400&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@
         </div>
         <!--Esta sección dentro del header incluye el logo de la institución-->
         <div class="header_section logo">
-            <a href="Inicio.html"><img src="Multimedia/logo.png" alt="logo de la institución" width="170" height="170"></a>
+            <a href="Inicio.php"><img src="Multimedia/logo.png" alt="logo de la institución" width="170" height="170"></a>
         </div>
         <!--Esta sección dentro del header incluye la misión de la institución-->
         <div class="header_section informacion">
@@ -37,27 +38,30 @@
     <nav class="nav_links">
             <ul>
                 <li class="desplegable">
-                    <a href="QuienesSomos.html">¿QUIÉNES SOMOS?</a>
+                    <a href="QuienesSomos.php">¿QUIÉNES SOMOS?</a>
                         <ul class="desplegable_menu">
                             <li><a href="#">Nuestra misión</a></li>
                             <li><a href="#">¿Cómo establecimos la forma de ayudar?</a></li>
                         </ul>
                 </li>
                 <li class="desplegable">
-                    <a href="QueHacemos.html">¿QUÉ HACEMOS?</a>
+                    <a href="QueHacemos.php">¿QUÉ HACEMOS?</a>
                         <ul class="desplegable_menu">
-                            <li><a href="#">Alimentación</a></li>
-                            <li><a href="#">Apoyo a la salud</a></li>
-                            <li><a href="#">Gestión de identidad legal</a></li>
-                            <li><a href="#">Educación integral</a></li>
-                            <li><a href="#">Refugio para mujeres y niños en situaciones vulnerables</a></li>
-                            <li><a href="#">Promoción del empleo</a></li>
+                            <li><a href="QueHacemos.php#alimentacion">Alimentación</a></li>
+                            <li><a href="QueHacemos.php#salud">Apoyo a la salud</a></li>
+                            <li><a href="QueHacemos.php#identidad">Gestión de identidad legal</a></li>
+                            <li><a href="QueHacemos.php#educacion">Educación integral</a></li>
+                            <li><a href="QueHacemos.php#refugio">Refugio para mujeres y niños en situaciones vulnerables</a></li>
+                            <li><a href="QueHacemos.php#empleo">Promoción del empleo</a></li>
                         </ul>
                 </li>
-                <li><a href="ComoPuedesAyudar.html">¿CÓMO PUEDES AYUDAR?</a></li>
-                <li><a href="Contacto.html">CONTACTO</a></li>
+                <li><a href="ComoPuedesAyudar.php">¿CÓMO PUEDES AYUDAR?</a></li>
+                <li><a href="ServicioSocial.php">PRESTADORES DE SERVICIO SOCIAL</a></li>
+                <li><a href="Contacto.php">CONTACTO</a></li>
             </ul>
     </nav>
+
+    <main>
 
     <!--Video introductorio (presentación de la institución)-->
     <article>
@@ -83,7 +87,7 @@
                         <div class="contenido_texto">
                             <p>La alimentación tranforma. Empoderamos a mujeres de la comunidad para liderar la entrega de alimentos a quienes más lo necesitan.</p>
                             <p>Llevando platos gratuitos o accesibles a las calles y vecindades, no solo llenamos estómagos: salvamos familias y reconstruimos el tejido social desde la solidaridad.</p>
-                            <a href="QuienesSomos.html" class="boton_tarjeta" class="enlace_trasero">VER MÁS</a>
+                            <a href="QueHacemos.php#alimentacion" class="boton_tarjeta" class="enlace_trasero">VER MÁS</a>
                         </div>
                     </div>
                 </div>
@@ -94,7 +98,7 @@
                     <div class="cara_tarjeta cara_tarjeta_frontal">
                         <img src="Multimedia/salud.jpg" alt="¿Qué hacemos?">
                         <div class="contenido_texto">
-                            <h2>"ATENDIENDO SU SALUD"</h2>
+                            <h2>ATENDIENDO SU SALUD</h2>
                         </div>
                     </div>
                     <div class="cara_tarjeta cara_tarjeta_trasera">
@@ -102,7 +106,7 @@
                         <div class="contenido_texto">
                             <p>En Guadalajara, una comunidad de 11,000 personas carece de acceso a servicios de salud oficiales por falta de identidad, o le temen debido al riesgo de separación familiar.</p>
                             <p>Brindando consultas básicas a domicilio, traslados a hospitales, y medicamentos, buscamos que la falta de un documento no sea una sentencia de muerte o desamparo.</p>
-                            <a href="QueHacemos.html" class="boton_tarjeta" class="enlace_trasero">VER MÁS</a>
+                            <a href="QueHacemos.php#salud" class="boton_tarjeta" class="enlace_trasero">VER MÁS</a>
                         </div>
                     </div>
                 </div>
@@ -120,7 +124,7 @@
                         <img src="Multimedia/fondo_tarjeta.jpeg" alt="Fondo">
                         <div class="contenido_texto">
                             <p>En un sistema que utiliza el chantaje económico como obstáculo de registro, nosotros brindamos apoyo para que ningún niño o adulto viva en las sombras por falta de un documento que el Estado les ha vuelto inalcanzable.</p>
-                            <a href="Historias de esperanza.html" class="boton_tarjeta" class="enlace_trasero">VER MÁS</a>
+                            <a href="QueHacemos.php#identidad" class="boton_tarjeta" class="enlace_trasero">VER MÁS</a>
                         </div>
                     </div>
                 </div>
@@ -139,7 +143,7 @@
                         <div class="contenido_texto">
                             <p>Confinados en un gueto de invisibilidad, la comunidad de San Juan de Dios se desarrolla en un entorno sin escuela ni documentos, marcados por el aislamiento.</p>
                             <p>Rompemos estas fronteras mediante la educación cultural y el modelaje: un proceso de aprendizaje sin presiones donde el arte y el servicio transforman la apatía en alegría.</p>
-                            <a href="QuienesSomos.html" class="boton_tarjeta" class="enlace_trasero">VER MÁS</a>
+                            <a href="QueHacemos.php#educacion" class="boton_tarjeta" class="enlace_trasero">VER MÁS</a>
                         </div>
                     </div>
                 </div>
@@ -158,7 +162,7 @@
                         <div class="contenido_texto">
                             <p>Miles de familias viven bajo la condena del 'pago diario': si no cubren su renta cada noche, pierden lo poco que tienen y son arrojadas a la violencia de la calle.</p>
                             <p>Nuestro refugio es su espacio de paz; un santuario protegido donde ni agresores ni autoridades pueden vulnerar la seguridad de las víctimas.</p>
-                            <a href="QueHacemos.html" class="boton_tarjeta" class="enlace_trasero">VER MÁS</a>
+                            <a href="QueHacemos.php#refugio" class="boton_tarjeta" class="enlace_trasero">VER MÁS</a>
                         </div>
                     </div>
                 </div>
@@ -177,32 +181,16 @@
                         <div class="contenido_texto">
                             <p>Con el sistema de valores actual, madres e hijos nacen, crecen y mueren en un mundo sin derechos ni oportunidades. Desde hace 450 años, así sobreviven.</p>
                             <p>Buscamos guiar a las mujeres de la comunidad en el desarrollo de sus habilidades, brindándoles las herramientas necesarias para que logren obtener un empleo diferente que las dignificará.</p>
-                            <a href="Historias de esperanza.html" class="boton_tarjeta" class="enlace_trasero">VER MÁS</a>
+                            <a href="QueHacemos.php#empleo" class="boton_tarjeta" class="enlace_trasero">VER MÁS</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </article>
+    </main>
 
-    <!--Footer con la información de contacto e información legal-->
-    <footer class="footer">
-        <div class="footer_contenido">
-            <div class="footer_columna">
-                <a href="Inicio.html"><img src="Multimedia/logo.png" alt="logo de la institución" width="120" height="120"></a>
-                <h4>Colegio de Especialidades Avanzadas </h4>
-                <h4>en la Sexualidad y Salud A.C.</h4>
-            </div>
-            <div class="footer_columna">
-                <p>Contacto:</p>
-                <p>📍 San Juan de Dios, Guadalajara, Jal.</p>
-                <p>📞 +52 33 1093 9529</p>
-                <p>✉️ contactodespecialidades@gmail.com</p>
-            </div>
-        </div>   
-        <div class="footer_legal">
-            <p>&copy; 2026. Colegio de Especialidades Avanzadas en Sexualidad y Salud A.C. Todos los derechos reservados. Sitio creado por Susana Manzo.</p>
-        </div>
-    </footer>
+    <?php include 'footer.php'; ?>
+
 </body>
 </html>
