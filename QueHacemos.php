@@ -4,50 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="CSS/EstiloGeneral.css">
+    <link rel="stylesheet" href="CSS/EstiloQueHacemos.css">
     <title>Qué hacemos</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,400&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  
-  <nav class="nav_global">
 
-    <div class="nav_global_logo">
-       <a href="Inicio.html"><img src="Multimedia/logo.png" alt="logo de la institución" width="100" height="110"></a>
-    </div>
+    <?php include 'nav.php'; ?>
 
-      <ul class="nav_global_links">
-          <li class="desplegable">
-              <a href="QuienesSomos.html">¿QUIÉNES SOMOS?</a>
-              <ul class="desplegable_menu">
-                  <li><a href="#">Nuestra misión</a></li>
-                  <li><a href="#">¿Cómo establecimos la forma de ayudar?</a></li>
-              </ul>
-          </li>
-          <li class="desplegable">
-              <a href="QueHacemos.html">¿QUÉ HACEMOS?</a>
-                 <ul class="desplegable_menu">
-                      <li><a href="#">Alimentación</a></li>
-                      <li><a href="#">Apoyo a la salud</a></li>
-                      <li><a href="#">Gestión de identidad legal</a></li>
-                      <li><a href="#">Educación integral</a></li>
-                      <li><a href="#">Refugio para mujeres y niños en situaciones vulnerables</a></li>
-                      <li><a href="#">Promoción del empleo</a></li>
-                  </ul>
-          </li>
-          <li><a href="ComoPuedesAyudar.html">¿CÓMO PUEDES AYUDAR?</a></li>
-          <li><a href="Contacto.html">CONTACTO</a></li>
-      </ul>
-  </nav>
-
-
+<main>
 
 <!--EJE DE ALIMENTACIÓN-->
 <!----------------------------------------------------------------------------------------------------------------------->
   
-  <section class="caja">
+  <section class="caja" id="alimentacion">
     <section class="eje">
 
       <div class="eje_multimedia">
@@ -145,7 +118,7 @@
 <!--EJE DE APOYO A LA SALUD-->
 <!--------------------------------------------------------------------------------------------------------------------->
 
-   <section class="caja">
+   <section class="caja" id="salud">
     <section class="eje">
 
       <div class="eje_contenido">
@@ -256,7 +229,7 @@
 <!--EJE DE GESTIÓN DE IDENTIDAD LEGAL-->
 <!----------------------------------------------------------------------------------------------------------------------->
 
-  <section class="caja">
+  <section class="caja" id="identidad">
     <section class="eje">
 
       <div class="eje_multimedia">
@@ -350,7 +323,7 @@
 <!---EJE DE EDUCACIÓN-->
 <!----------------------------------------------------------------------------------------------------------------------->
    
-   <section class="caja">
+   <section class="caja" id="educacion">
     <section class="eje">
 
       <div class="eje_contenido">
@@ -449,7 +422,7 @@
 <!--EJE DE REFUGIO PARA MUJERES Y NIÑOS EN SITUACIONES VULNERABLES-->
 <!----------------------------------------------------------------------------------------------------------------------->  
 
-   <section class="caja">
+   <section class="caja" id="refugio">
     <section class="eje">
 
       <div class="eje_multimedia">
@@ -527,7 +500,7 @@
 <!--EJE DE PROMOCIÓN DEL EMPLEO-->
 <!----------------------------------------------------------------------------------------------------------------------->
 
-   <section class="caja">
+   <section class="caja" id="empleo">
     <section class="eje">
 
       <div class="eje_contenido">
@@ -600,8 +573,9 @@
                 </a>
                 </div>
         </section>
+</main>
 
-
+    <?php include 'footer.php'; ?>
 
 </body>
 </html>

@@ -1,0 +1,340 @@
+/*Descripción: Contiene estilos específicos para la página de inicio, como el header, navegación y las tarjetas flip*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*HEADER PARA LA PÁGINA PRINCIPAL*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.header {
+  display: flex;                  
+  justify-content: space-between;   /* Separa las secciones equitativamente */
+  align-items: center;              /* Centra los elementos verticalmente */
+  padding: 1px 2%;    
+  /*Fondo de header*/              
+  background-image: linear-gradient(rgba(113, 63, 54, 0.4), rgba(113, 63, 54, 0.4)), url('../Multimedia/fondoheader.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header_section {
+  flex: 1;         /* Distribuye el espacio en partes iguales */
+  display: flex;
+}
+
+/* Alineaciones */
+.logo, .informacion, .nav_links {
+justify-content: center;
+}
+
+/* Animación del logo */
+.header_section.logo img {
+  transition: transform 0.3s ease; 
+}
+
+/* Efecto cuando el mouse pasa por encima */
+.header_section.logo img:hover {
+  transform: scale(1.08); /* Hace que el logo crezca un 8% */
+  cursor: pointer;        
+}
+
+/* Contenedor principal */
+article {
+  font-family: 'Georgia', 'Times New Roman', serif; 
+  text-align: center; 
+  /* Límites para el ancho del texto */
+  max-width: 850px;     
+  margin: 30px auto;    
+  padding: 0 20px;      
+}
+
+/* Estilo para el nombre de la institución*/
+article h2 {
+  font-size: 1.7rem;      
+  color: var(--crema-fondo);     
+  margin-bottom: 15px;     /* Separación con el subtítulo */
+  line-height: 1.3;        /* Espaciado entre las líneas del título */
+  font-weight: bold;
+}
+
+/* Estilo para la información del header*/
+article h3 {
+  font-size: 1rem;      
+  color: var(--crema-fondo);     
+  font-weight: normal;     
+  font-style: italic;      /* Cursiva*/
+  line-height: 1.3;
+}
+
+
+/*NAVEGACIÓN PARA LA PÁGINA PRINCIPAL*/
+/*-------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Contenedor principal */
+.nav_links {
+  width: 100%;
+  background-color: var(--rojo-oxido);
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+
+/* La lista principal */
+.nav_links > ul {
+  color: var(--crema-fondo);
+  font-weight: bold;
+  font-size: 1.1rem;
+  list-style: none;          /*Quita decoración de lista*/
+  display: flex;
+  gap: 30px;                 /*Separacion entre los botones del menú*/
+  margin: 0;                 
+  padding: 15px 0;           
+}
+
+/* Enlaces principales */
+.nav_links > ul > li > a {
+  color: var(--crema-fondo);
+  text-decoration: none;
+  font-size: 1.02rem;
+  transition: color 0.3s ease; /* Transición a dorado al pasar el ratón */
+}
+
+/* Efecto Hover dorado brilla al pasar el ratón */
+.nav_links > ul > li > a:hover {
+  color: var(--dorado-clasico);           
+}
+/* Contenedor "Padre" del desplegable */
+.desplegable {
+  position: relative;        /*Ancla el submenú*/
+}
+
+/* Desplegable */
+.desplegable_menu {
+  list-style: none;      
+  padding:  10px 0;
+  margin: 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(15px);
+  display: flex;                /*Oculto por defecto*/
+  position: absolute;       
+  top: 100%;                
+  left: 0;                  
+  background-color: var(--crema-fondo); 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);     
+  min-width: 250px;         
+  flex-direction: column;       
+  z-index: 1000;     /*Asegura que el menú desplegable quedará por encima de cualquier otro elemento de la página */
+  border-radius: 0 0 8px 8px;
+  border-top: 3px solid var(--dorado-clasico);      /* Línea dorada en la parte superior del submenú */
+  transition: all 0.3s ease; /* Animación de entrada */
+}
+
+
+/* El estilo de los sub-enlaces individuales */
+.desplegable_menu li a {
+  display: block;           
+  padding: 12px 20px;       
+  color: var(--gris-texto);
+  text-decoration: none;
+  font-weight: normal;
+  transition: all 0.3s ease; 
+}
+
+.desplegable:hover .desplegable_menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0); /* Regresa a su posición original */
+}
+
+/* Efecto al pasar el ratón sobre una opción del submenú */
+.desplegable_menu li a:hover {
+  background-color: rgba(0, 0, 0, 0.186); /* Fondo muy sutil, no tan pesado */
+  color: var(--dorado-clasico);
+  padding-left: 28px;   
+}
+
+/* Muestra el submenú al pasar el ratón */
+.desplegable:hover .desplegable_menu {
+  display: flex;            
+}
+
+
+/*CONTENIDO*/
+/*------------------------------------------------------------------------------------*/
+/*Caracteristicas generales*/
+.contenido {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;    /* Alinea los elementos uno debajo del otro */
+  gap: 15px;
+  align-items: center;
+  min-height: 100vh;         /*Se usa vh para un diseño responsivo que se adapte a toda la pantalla*/
+  padding: 60px 0;
+  color: var(--crema-fondo);
+  background-color: var(--gris-texto);
+  background: linear-gradient(135deg, #713f36, #b9695a);
+}
+
+.subtitulo_apartado {
+    width: 100%;           
+    text-align: center;    
+    margin-bottom: 20px;    /* Crea espacio entre el título y las tarjetas */
+    font-size: 2rem;        /* Ajusta el tamaño según tu diseño */
+    font-family: 'Georgia', 'Times New Roman', serif;
+}
+
+/*Espacio donde se encuestran las tarjetas*/
+.escena {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;            /*Para formar nuevas filas*/
+  gap:20px;
+  width: 90%;
+  max-width: 1500px;
+}
+
+/*Estructura general de las tarjetas flip*/
+.tarjeta {
+  background-color: transparent;
+  width: 240px;
+  height: 340px;
+  perspective: 1000px;      /* Propiedad para transformaciones 3d */
+  cursor: pointer;
+}
+
+.tarjeta_interior {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;    /* Propiedad para elementos tranformados 3d */
+  transition: transform 0.6s ease;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.tarjeta:hover .tarjeta_interior {
+  transform: rotateY(180deg);          /*Rotación de 180 grados de las tarjetas*/
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8);
+}
+
+/*Caras de las tarjetas */
+.cara_tarjeta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  backface-visibility: hidden;        /*Oculta la parte trasera del fondo*/
+  overflow:hidden;                    /*Oculta las esquinas de las imágenes para que no sobresalgan*/
+}
+
+.cara_tarjeta img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;                       /*Capa 0: Es el fondo de la tarjeta*/
+}
+
+/* Un filtro oscuro para que resalte el texto */
+.cara_tarjeta::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Oscurece la imagen un 60% */
+  z-index: 1;
+}
+
+.tarjeta:hover .cara_tarjeta_frontal {
+  filter: brightness(1.5);
+}
+
+.cara_tarjeta_trasera {
+  transform: rotateY(180deg);                /*Se voltea desde un inicio para que el texto quede oculto*/
+}
+
+/* El contenedor del texto que va sobre la imagen */
+.contenido_texto {
+  position: relative;
+  z-index: 2; /* Sobre la imagen y el filtro oscuro */
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box; /* Asegura que el padding no desborde la tarjeta */
+  gap: 15px;
+}
+
+/* Ajustes de tipografía para el interior de la tarjeta: Títulos */
+.contenido_texto h2 {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  margin: 0;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Ajustes de tipografía para el interior de la tarjeta: Párrafos */
+.contenido_texto p {
+  font-family: 'Nunito', sans-serif;
+  text-align: justify;
+  font-weight: 400;
+  margin: 0;
+  font-size: 0.85rem; /* Letra un poco más pequeña para que quepa todo el texto */
+  line-height: 1.1;
+  color:#f8f9fa;
+  text-wrap: balance;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p + p {
+  margin-top: 8px; /* Solo aplica si hay un párrafo seguido de otro */
+}
+
+/*Botones y enlaces*/
+.boton_tarjeta {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--dorado-mostaza);
+  color: var(--crema-fondo);
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  transition: background-color 0.3s ease;
+}
+
+/*Animación de los botones*/
+.boton_tarjeta:hover {
+  background-color: var(--gris-texto);
+  transform: translateY(-2px);
+}
+
+/* Estilo para el link de la cara trasera */
+.enlace_trasero {
+  margin-top: 15px;
+  color: #ffcc00;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+
+
+
+
