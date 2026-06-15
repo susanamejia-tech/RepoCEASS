@@ -5,8 +5,14 @@ se incluye un logo que enlaza a la página de inicio.-->
 <nav class="nav_global">
 
     <div class="nav_global_logo">
-       <a href="Inicio.php"><img src="Multimedia/logo.png" alt="logo de la institución" width="100" height="110"></a>
+       <a href="index.php"><img src="Multimedia/logo.png" alt="logo de la institución" width="100" height="110"></a>
     </div>
+
+    <button class="menu_hamburguesa" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
       <ul class="nav_global_links">
           <li class="desplegable">
@@ -33,3 +39,27 @@ se incluye un logo que enlaza a la página de inicio.-->
       </ul>
   </nav>
 
+<script>
+  const botonMenu = document.querySelector('.menu_hamburguesa');
+  const listaEnlaces = document.querySelector('.nav_global_links');
+  const itemsDesplegables = document.querySelectorAll('.desplegable');
+
+  // Alternar menú principal
+  botonMenu.addEventListener('click', () => {
+    listaEnlaces.classList.toggle('activo');
+  });
+
+  // Permitir abrir los submenús con un clic en dispositivos táctiles
+  itemsDesplegables.forEach(item => {
+    // Seleccionamos ÚNICAMENTE el enlace principal del menú desplegable
+    const enlacePrincipal = item.querySelector('a');
+    
+    enlacePrincipal.addEventListener('click', (e) => {
+      if (window.innerWidth < 768) {
+        // Ahora esto solo evita que el enlace principal recargue la página
+        e.preventDefault(); 
+        item.classList.toggle('abierto');
+      }
+    });
+  });
+</script>

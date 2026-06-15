@@ -4,7 +4,7 @@
     <footer class="footer">
         <div class="footer_contenido">
             <div class="footer_columna">
-                <a href="Inicio.html"><img src="Multimedia/logo.png" alt="logo de la institución" width="120" height="120"></a>
+                <a href="index.php"><img src="Multimedia/logo.png" alt="logo de la institución" width="120" height="120"></a>
                 <h4>Colegio de Especialidades Avanzadas </h4>
                 <h4>en la Sexualidad y Salud A.C.</h4>
             </div>

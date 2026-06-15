@@ -35,7 +35,7 @@
               en el sexo servicio y consumiendo de diferentes tipos de sustancias para poder lidiar con los monstruos que tienen que atender.
             </p>
 
-          <a href="#" class="boton_eje">Galeria de fotos</a>
+          <!-- <a href="#" class="boton_eje">Galeria de fotos</a> -->
       </div>
       </section>
       <div class="texto_inferior">
@@ -50,67 +50,207 @@
               que las eduque en el proceso. Debido a la vulnerabilidad extrema de la zona, los alimentos serán gratuitos o de muy bajo costo. Este programa de intervención no es una opción; 
               es una necesidad, porque la alimentación no solo nutre el cuerpo, es el motor de la transformación social que, en San Juan de Dios, está salvando familias.
             </p>
-
-            <table>
-              <thead>
-                  <tr>
-                      <th>Concepto</th>
-                      <th>Detalles</th>
-                      <th>Costo (USD)</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td><strong>Local</strong></td>
-                      <td>Renta mensual</td>
-                      <td class="monto">$175.00</td>
-                  </tr>
-                  <tr>
-                      <td><strong>Adecuación</strong></td>
-                      <td>Mampostería, agua, drenaje, cableado, gas</td>
-                      <td class="monto">$5,883.00</td>
-                  </tr>
-                  <tr>
-                      <td><strong>Equipamiento</strong></td>
-                      <td>Tarja, estufa, electrodomésticos, anaqueles, máquina de tortillas</td>
-                      <td class="monto">$30,000.00</td>
-                  </tr>
-                  <tr>
-                      <td><strong>Energéticos</strong></td>
-                      <td>Agua, luz, gas, gasolina (mensual)</td>
-                      <td class="monto">$0.00</td>
-                  </tr>
-                  <tr>
-                      <td><strong>Insumos</strong></td>
-                      <td>Alimentos (3 comidas al día por familia)</td>
-                      <td class="monto">$675.00</td>
-                  </tr>
-                  <tr>
-                      <td><strong>Vehículo</strong></td>
-                      <td>Unidad usada para transporte</td>
-                      <td class="monto">$6,000.00</td>
-                  </tr>
-                  <tr>
-                      <td><strong>Personal</strong></td>
-                      <td>Cocinera y chofer (sueldo mensual)</td>
-                      <td class="monto">$800.00</td>
-                  </tr>
-                  <tr>
-                      <td><strong>Desechables</strong></td>
-                      <td>Para 250 familias (1,250 personas)</td>
-                      <td class="monto">Pendiente</td>
-                  </tr>
-              </tbody>
-          </table>
+        <div class="tabla-responsiva">
+             <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Cantidad total</th>
+                        <th>Precio Unitario</th>
+                        <th>Monto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fogón</td>
+                        <td class="cantidad">2</td>
+                        <td class="monto">MX$1,673.00</td>
+                        <td class="monto">MX$3,346.00</td>
+                    </tr>
+                    <tr>
+                        <td>Plancha</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$3,699.00</td>
+                        <td class="monto">MX$3,699.00</td>
+                    </tr>
+                    <tr>
+                        <td>Freidora</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$2,597.00</td>
+                        <td class="monto">MX$2,597.00</td>
+                    </tr>
+                    <tr>
+                        <td>Asador</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$1,907.11</td>
+                        <td class="monto">MX$1,907.11</td>
+                    </tr>
+                    <tr>
+                        <td>Cazo 60 lt</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$810.00</td>
+                        <td class="monto">MX$810.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cazo 100 lt</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$2,085.00</td>
+                        <td class="monto">MX$2,085.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tanque de gas Ch</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$910.00</td>
+                        <td class="monto">MX$910.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tanque de gas Gde</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$1,815.00</td>
+                        <td class="monto">MX$1,815.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tarja de acero inoxidable</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$6,999.00</td>
+                        <td class="monto">MX$6,999.00</td>
+                    </tr>
+                    <tr>
+                        <td>Paila para nixtamal</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$17,499.00</td>
+                        <td class="monto">MX$17,499.00</td>
+                    </tr>
+                    <tr>
+                        <td>Molino de nixtamal</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$8,704.59</td>
+                        <td class="monto">MX$8,704.59</td>
+                    </tr>
+                    <tr>
+                        <td>Licuadora industrial</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$9,999.00</td>
+                        <td class="monto">MX$9,999.00</td>
+                    </tr>
+                    <tr>
+                        <td>Rebanadora</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$5,620.00</td>
+                        <td class="monto">MX$5,620.00</td>
+                    </tr>
+                    <tr>
+                        <td>Olla express 20 lt</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$1,939.92</td>
+                        <td class="monto">MX$1,939.92</td>
+                    </tr>
+                    <tr>
+                        <td>Olla vaporara 20 lt</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$2,130.00</td>
+                        <td class="monto">MX$2,130.00</td>
+                    </tr>
+                    <tr>
+                        <td>Olla arrocera Gde</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$1,686.09</td>
+                        <td class="monto">MX$1,686.09</td>
+                    </tr>
+                    <tr>
+                        <td>Sarte de acero inox Gde</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$1,660.00</td>
+                        <td class="monto">MX$1,660.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cuchillería</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$980.10</td>
+                        <td class="monto">MX$980.10</td>
+                    </tr>
+                    <tr>
+                        <td>Cucharas</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$908.10</td>
+                        <td class="monto">MX$908.10</td>
+                    </tr>
+                    <tr>
+                        <td>Coladeras varios tam</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$289.00</td>
+                        <td class="monto">MX$289.00</td>
+                    </tr>
+                    <tr>
+                        <td>Insertos de acero inox varios tams (10 pzs)</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$1,058.00</td>
+                        <td class="monto">MX$1,058.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cafetera (45 tazas)</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$999.00</td>
+                        <td class="monto">MX$999.00</td>
+                    </tr>
+                    <tr>
+                        <td>Refrigerados Industrial (2 plazas)</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$33,499.00</td>
+                        <td class="monto">MX$33,499.00</td>
+                    </tr>
+                    <tr>
+                        <td>Congelador vertical 16’</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$16,529.00</td>
+                        <td class="monto">MX$16,529.00</td>
+                    </tr>
+                    <tr>
+                        <td>Mezcladora 12 lt</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$4,399.00</td>
+                        <td class="monto">MX$4,399.00</td>
+                    </tr>
+                    <tr>
+                        <td>Campana extractora</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$4,542.00</td>
+                        <td class="monto">MX$4,542.00</td>
+                    </tr>
+                    <tr>
+                        <td>Mesa de acero inox L120 x A60 x A85 cm</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$2,677.00</td>
+                        <td class="monto">MX$2,677.00</td>
+                    </tr>
+                    <tr>
+                        <td>Bascula</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$1,387.00</td>
+                        <td class="monto">MX$1,387.00</td>
+                    </tr>
+                    <tr>
+                        <td>Estantería L92 x A36 x A183 cm</td>
+                        <td class="cantidad">1</td>
+                        <td class="monto">MX$1,691.00</td>
+                        <td class="monto">MX$1,691.00</td>
+                    </tr>
+                    <tr class="total-final">
+                        <td colspan="2">Monto Total</td>
+                        <td>&nbsp;</td>
+                        <td class="monto">MX$132,375.91</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         </div>
 
         <div class="contenedor_boton_donar">
-          <a href="ComoPuedesAyudar.html" class="boton_donar">
+          <a href="ComoPuedesAyudar.php" class="boton_donar">
             <span>❤</span> ¡QUIERO APOYAR!
           </a>
         </div>
   </section>
-
 
 
 
@@ -128,7 +268,7 @@
               fantasmas para el sistema de salud oficial. Madres le temen a buscar ayuda médica porque, sin documentos, el Estado las criminaliza y las separa de sus hijos.
             </p>
 
-          <a href="#" class="boton_eje">Galeria de fotos</a>
+          <!-- <a href="#" class="boton_eje">Galeria de fotos</a> -->
       </div>
 
       <div class="eje_multimedia">
@@ -217,7 +357,7 @@
         </div>
 
         <div class="contenedor_boton_donar">
-          <a href="ComoPuedesAyudar.html" class="boton_donar">
+          <a href="ComoPuedesAyudar.php" class="boton_donar">
             <span>❤</span> ¡QUIERO APOYAR!
           </a>
         </div>
@@ -244,7 +384,7 @@
                 que,  en lugar de incentivar el registro, utiliza sanciones económicas y penales que generan miedo y perpetúan la indocumentación hasta la adultez.
             </p>
 
-          <a href="#" class="boton_eje">Galeria de fotos</a>
+          <!-- <a href="#" class="boton_eje">Galeria de fotos</a> -->
       </div>
       </section>
       <div class="texto_inferior">
@@ -309,7 +449,7 @@
         </div>
 
         <div class="contenedor_boton_donar">
-          <a href="ComoPuedesAyudar.html" class="boton_donar">
+          <a href="ComoPuedesAyudar.php" class="boton_donar">
             <span>❤</span> ¡QUIERO APOYAR!
           </a>
         </div>
@@ -333,7 +473,7 @@
                 al de la sociedad de Guadalajara. La desnutrición crónica hace que presenten muchas dificultades para aprender y, sin documentos, no tienen acceso a las escuelas ni a programas de cultura.
             </p>
 
-          <a href="#" class="boton_eje">Galeria de fotos</a>
+          <!-- <a href="#" class="boton_eje">Galeria de fotos</a> -->
       </div>
 
       <div class="eje_multimedia">
@@ -410,7 +550,7 @@
         </div>
 
         <div class="contenedor_boton_donar">
-          <a href="ComoPuedesAyudar.html" class="boton_donar">
+          <a href="ComoPuedesAyudar.php" class="boton_donar">
             <span>❤</span> ¡QUIERO APOYAR!
           </a>
         </div>
@@ -436,7 +576,7 @@
                 tienen y además son constantemente acosados y violentados para que cubran los pagos sin tomar en cuenta las dificultades que sufren para percibir un ingreso, ya que no tienen identidad, no cuentan con un trabajo estable y suelen explotados por proxenetas. 
             </p>
 
-          <a href="#" class="boton_eje">Galeria de fotos</a>
+          <!-- <a href="#" class="boton_eje">Galeria de fotos</a> -->
         </div>
         </section>
         <div class="texto_inferior">
@@ -487,7 +627,7 @@
         </div>
 
         <div class="contenedor_boton_donar">
-          <a href="ComoPuedesAyudar.html" class="boton_donar">
+          <a href="ComoPuedesAyudar.php" class="boton_donar">
             <span>❤</span> ¡QUIERO APOYAR!
           </a>
         </div>
@@ -511,7 +651,7 @@
                 que no merece oportunidades, solo merece ser usada y discriminada. Madres y sus hijos nacen, crecen y mueren de esta forma y, desde hace 450 años, así sobreviven.
             </p>
 
-          <a href="#" class="boton_eje">Galeria de fotos</a>
+         <!-- <a href="#" class="boton_eje">Galeria de fotos</a> -->
       </div>
 
       <div class="eje_multimedia">
@@ -568,7 +708,7 @@
                 </div>
 
                 <div class="contenedor_boton_donar">
-                <a href="ComoPuedesAyudar.html" class="boton_donar">
+                <a href="ComoPuedesAyudar.php" class="boton_donar">
                     <span>❤</span> ¡QUIERO APOYAR!
                 </a>
                 </div>

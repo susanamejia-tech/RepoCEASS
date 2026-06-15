@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/EstiloServicioSocial.css">
     <link rel="stylesheet" href="CSS/EstiloGeneral.css">
+    <link rel="stylesheet" href="CSS/EstiloServicioSocial.css">
     <title>Servicio Social</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;1,400&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
@@ -498,7 +498,7 @@
         <form action="https://formspree.io/f/xlgvgzgl" method="POST" class="formulario-contacto">
             <div class="grupo-input">
                 <label for="nombre">Nombre completo</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Susana Mejía">
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Sergio Pérez">
             </div>
             
             <div class="grupo-input">
