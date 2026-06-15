@@ -26,7 +26,7 @@ y tarjetas flip con links a páginas con más información sobre las formas en q
         </div>
         <!--Esta sección dentro del header incluye el logo de la institución-->
         <div class="header_section logo">
-            <a href="index.php"><img src="Multimedia/logo.png" alt="logo de la institución" width="170" height="170"></a>
+            <a href="index.php"><img src="Multimedia/logo.png" alt="logo de la institución" width="200" height="170"></a>
         </div>
         <!--Esta sección dentro del header incluye la misión de la institución-->
         <div class="header_section informacion">

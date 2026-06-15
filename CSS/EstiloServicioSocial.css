@@ -5,12 +5,9 @@
    VARIABLES Y CONFIGURACIÓN BASE
    ========================================================================== */
 :root {
-    --color-wine-dark: #4d141e;
-    --color-wine-light: #9b3a49;
-    --color-gold: #c5a059;
-    --color-bg: #f9fafb;
-    --color-text-dark: #1f2937;
-    --color-text-muted: #6b7280;
+    --vino-oscuro: #4d141e;
+    --vino-claro: #9b3a49;
+    --dorado: #c5a059;
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
@@ -20,21 +17,19 @@
     margin: 0;
     padding: 0;
 }
-
+ 
 body {
     /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;*/
-    background-color: var(--color-bg);
-    color: var(--color-text-dark);
+    background-color: var(--fondo-general);
+    color: var(--gris-texto);
     line-height: 1.5;
 }
 
-/* ==========================================================================
-   1. HERO SECTION
-   ========================================================================== */
+/* ---------------------------------- HERO --------------------------------------- */
 .hero {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     position: relative;
-    background-color: var(--color-wine-dark);
+    background-color: var(--vino-oscuro);
     color: #ffffff;
     overflow: hidden;
 }
@@ -80,7 +75,7 @@ body {
 }
 
 .dorado {
-    color: var(--color-gold);
+    color: var(--dorado);
 }
 
 .hero-subtitulo {
@@ -98,9 +93,7 @@ body {
 
 
 
-/* ==========================================================================
-   2. CONTENIDO Y GRID RESPONSIVO (Revisa y reemplaza este bloque)
-   ========================================================================== */
+/* ---------------------------------- CONTENIDO Y GRID RESPONSIVO ---------------------------------*/
 .contenedor-principal {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     max-width: 1152px;
@@ -110,33 +103,29 @@ body {
     z-index: 10;
 }
 
-/* En celulares, todo se muestra en una sola columna hacia abajo */
+/* Grid con contenido en columnas */
 .grid-layout {
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
 }
 
-/* A partir de tablets y pantallas de computadora (768px o más), se divide en 2 columnas */
 @media (min-width: 768px) {
     .grid-layout {
-        grid-template-columns: 2fr 1fr; /* Las carreras toman 2 partes del espacio y el sidebar toma 1 */
-        align-items: start;             /* Evita que el sidebar se estire estéticamente hacia abajo */
+        grid-template-columns: 2fr 1fr;
+        align-items: start;           
     }
 }
 
 
 
-/* ==========================================================================
-   ACORDEONES (TARJETAS DE CARRERAS)
-   ========================================================================== */
+/* --------------------------------- ACORDEONES DE CARRERAS ------------------------------------ */
 .seccion-carreras {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-/* Cambiamos de accordion a acordeon */
 .acordeon-card {
     background-color: #ffffff;
     border-radius: 12px;
@@ -146,7 +135,7 @@ body {
 }
 
 .acordeon-card.active {
-    border-left: 4px solid var(--color-gold);
+    border-left: 4px solid var(--dorado);
     box-shadow: var(--shadow-lg);
 }
 
@@ -175,12 +164,11 @@ body {
 
 .icono-acordeon {
     font-size: 0.85rem;
-    color: var(--color-text-muted);
+    color: var(--gris-texto);
 }
 
-/* Corregimos icon-arrow por icono-acordeon */
 .acordeon-card.active .icono-acordeon {
-    color: var(--color-gold);
+    color: var(--dorado);
 }
 
 .acordeon-body {
@@ -196,50 +184,44 @@ body {
     text-decoration: none;
 }
 
-/* ==========================================================================
-   ESTILOS PARA LAS LISTAS DE ACTIVIDADES
-   ========================================================================== */
+/* -------------------------------- LISTADO DE ACTIVIDADES POR CARRERA --------------------------------- */
+
 .lista-actividades {
-    list-style-type: none; /* Esto quita las viñetas */
-    padding-left: 16px; /* Despega el texto del borde izquierdo */
-    margin-top: 12px; /* Separa la lista del título "Desglose de actividades:" */
+    list-style-type: none; 
+    padding-left: 16px; 
+    margin-top: 12px; 
 }
 
 .lista-actividades li {
-    margin-bottom: 10px; /* Da espacio entre cada viñeta para que sea fácil de leer */
+    margin-bottom: 10px; 
     color: #4b5563;
     line-height: 1.4;
     position: relative;
 }
 
-/* Un pequeño detalle visual antes de cada elemento (como un guion o flechita muy sutil) sin usar viñetas reales */
 .lista-actividades li::before {
     content: "-";
     position: absolute;
     left: -12px;
-    color: var(--color-gold); /* Un toque doradito */
+    color: var(--dorado); /* Un toque doradito */
     font-weight: bold;
 }
 
 
 
-/* ==========================================================================
-   NUEVOS ESTILOS PARA ACORDEONES ANIDADOS (UNIVERSIDADES Y CARRERAS)
-   ========================================================================== */
+/* --------------------- ACORDEONES ANIDADOS (UNIVERSIDADES Y CARRERAS) ------------------------------ */
 
-/* Ajustes para el contenedor de la Universidad */
 .university-block.active {
-    border-left: 4px solid var(--color-wine-light); /* Identificador del bloque grande */
+    border-left: 4px solid var(--vino-claro); /* Identificador del bloque grande */
 }
 
 .university-header .accordion-title {
-    font-size: 1.35rem; /* Un poco más grande para destacar el centro */
-    color: var(--color-wine-dark);
+    font-size: 1.35rem; 
+    color: var(--vino-oscuro);
 }
 
 
-
-/* Contenedor de las carreras internas */
+/* Contenedor de las carreras */
 .sub-carreras-contenedor {
     display: flex;
     flex-direction: column;
@@ -247,9 +229,9 @@ body {
     padding-top: 8px;
 }
 
-/* Tarjetas de carreras internas */
+/* Tarjetas de carreras */
 .sub-carreras-card {
-    background-color: #f9fafb; /* Fondo gris claro para contrastar con el fondo blanco de la universidad */
+    background-color: #f9fafb; 
     border: 1px solid #e5e7eb;
     border-radius: 8px;
     overflow: hidden;
@@ -259,7 +241,7 @@ body {
 .sub-carreras-card.active {
     background-color: #ffffff;
     border: 1px solid #e5e7eb;
-    border-left: 4px solid var(--color-gold); /* Toque dorado distintivo para la carrera activa */
+    border-left: 4px solid var(--dorado); 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
 }
 
@@ -283,16 +265,16 @@ body {
 .sub-carreras-title {
     font-size: 1.1rem;
     font-weight: 700;
-    color: var(--color-text-dark);
+    color: var(--vino-oscuro);
 }
 
 .sub-icon-arrow {
     font-size: 0.75rem;
-    color: var(--color-text-muted);
+    color: var(--gris-texto);
 }
 
 .sub-carreras-card.active .sub-icon-arrow {
-    color: var(--color-gold);
+    color: var(--dorado);
 }
 
 /* Cuerpo de la carrera interna */
@@ -312,7 +294,7 @@ body {
 }
 
 
-/* --- Control de visibilidad de las Carreras Internas --- */
+/* --- Control de visibilidad de las Carreras --- */
 .sub-carreras-body {
     display: none; /* Por defecto oculto */
 }
@@ -322,9 +304,7 @@ body {
 }
 
 
-/* ==========================================================================
-   3. BARRA LATERAL Y BENEFICIOS
-   ========================================================================== */
+/* -------------------------------- BARRA LATERAL Y BENEFICIOS --------------------------- */
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -362,13 +342,13 @@ body {
 .benefit-desc {
     font-size: 0.875rem;
     text-align: justify;
-    color: var(--color-text-muted);
+    color: var(--gris-texto);
 }
 
 /* BOTÓN DE ACCIÓN (CTA) */
 .btn-cta {
     width: 100%;
-    background-color: var(--color-wine-light);
+    background-color: var(--vino-claro);
     color: #ffffff;
     font-weight: 700;
     padding: 16px;
@@ -382,29 +362,27 @@ body {
 }
 
 .btn-cta:hover {
-    background-color: var(--color-wine-dark);
+    background-color: var(--vino-oscuro);
     transform: translateY(-2px);
 }
 
-/* ==========================================================================
-   MODAL Y FORMULARIO DE CONTACTO
-   ========================================================================== */
+/* ------------------------------ MODAL Y FORMULARIO DE CONTACTO ----------------------------*/
+
 .modal-oculto {
-    display: none; /* Oculto por defecto */
+    display: none; 
     position: fixed;
-    z-index: 2000; /* Asegura que quede por encima de la barra de navegación */
+    z-index: 2000; 
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(4px); /* Difumina tu página de fondo */
+    backdrop-filter: blur(4px); /* Difumina la página de fondo */
 }
 
 .modal-contenido {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: #ffffff;
-    /* Un pequeño margen arriba y centrado a los lados */
     margin: 5vh auto; 
     padding: 30px 40px;
     border-radius: 12px;
@@ -413,7 +391,6 @@ body {
     box-shadow: var(--shadow-lg);
     position: relative;
     animation: deslizarModal 0.3s ease-out;
-
     max-height: 90vh; /* Limitación del ancho de caja a un 85% de la pantalla */
     overflow-y: auto; /* Si el contenido es más largo, activa una barra de scroll adentro de la cajita blanca */
 }
@@ -427,7 +404,7 @@ body {
     position: absolute;
     top: 15px;
     right: 20px;
-    color: var(--color-text-muted);
+    color: var(--gris-texto);
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
@@ -435,17 +412,17 @@ body {
 }
 
 .cerrar-modal:hover {
-    color: var(--color-wine-dark);
+    color: var(--vino-oscuro);
 }
 
 .modal-titulo {
-    color: var(--color-wine-dark);
+    color: var(--vino-oscuro);
     margin-bottom: 8px;
     font-size: 1.8rem;
 }
 
 .modal-subtitulo {
-    color: var(--color-text-muted);
+    color: var(--gris-texto);
     margin-bottom: 24px;
     font-size: 0.95rem;
 }
@@ -466,7 +443,7 @@ body {
 .grupo-input label {
     font-weight: 700;
     font-size: 0.9rem;
-    color: var(--color-text-dark);
+    color: var(--gris-texto);
 }
 
 .grupo-input input,
@@ -482,12 +459,12 @@ body {
 .grupo-input input:focus,
 .grupo-input textarea:focus {
     outline: none;
-    border-color: var(--color-gold);
+    border-color: var(--dorado);
     box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.2);
 }
 
 .btn-enviar-form {
-    background-color: var(--color-wine-light);
+    background-color: var(--vino-claro);
     color: white;
     padding: 14px;
     border: none;
@@ -500,6 +477,6 @@ body {
 }
 
 .btn-enviar-form:hover {
-    background-color: var(--color-wine-dark);
+    background-color: var(--vino-oscuro);
     transform: translateY(-2px);
 }

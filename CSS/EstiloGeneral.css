@@ -13,7 +13,7 @@ body {
   --rojo-oxido: #713f36;       /* Color principal para el header, footer y títulos principales */
   --dorado-mostaza: #e2b71b;   /* Color del logo, botones y detalles a resaltar*/
   --dorado-clasico: #C5A059;   /* Color para transición de letras */
-  --fondo-general: #e7cf9d;      /* Color de fondo de toda la página web */
+  --fondo-general: #e2d0a9;      /* Color de fondo de toda la página web */
   --crema-fondo: #f5ecdb;      /* Color de fondo de toda la página web */
   --gris-texto: #333333;       /* color para texto normal de los parrafos*/
   --marron-texto: #473633;     /* Color para el texto normal de los párrafos */
@@ -39,10 +39,15 @@ body {
   z-index: 2000;
 }
 
-/*Animación del logo*/
+/*Animación y tamaño del logo*/
 .nav_global_logo img {
   transition: transform 0.3s ease;
+  max-height: 100px;  
+  width: auto;       
+  object-fit: contain;
+  display: block;    
 }
+
 .nav_global_logo img:hover {
   transform: scale(1.05); 
 }
